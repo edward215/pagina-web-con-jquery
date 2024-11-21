@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company</title>
+    <link rel="stylesheet" href="assets/Bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/Bootstrap/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous">
+
+    </script>
+    <script src="assets/js/jquery-3.7.1.js"></script>
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+    <header class="bg-info">
+        <div class="contain-titulo">
+            <button class = "btn btn-primary button_formulario" id ="buttonLogin " data-bs-toggle="modal" data-bs-target="#loginUser">Login</button>
+            <button class="btn btn-primary mb-4 button_formulario" id="buttonLogout">EXIT</button>
+            <div class="modal fade modal-producto container-fluid flex-row" id="loginUser">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content contenedor_modal row mx-0 loginbg">
+                        <div class="modal-header border-0">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 m-auto mb-5">
+                                <h2>Login</h2>
+                                <form id="formLogin">
+                                    <div class="mb-3">
+                                        <label for="emailUserLogin" class="form-label">correo</label>
+                                        <input type="text" class="form-control" id="emailUserLogin" name="email" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="passwordUserLogin" class="form-label">contraseña</label>
+                                        <input type="text" class="form-control" id="passwordUserLogin" name="nombre" required>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Aceptar</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>   
+            </div>          
+        <h1 class="text-center mt-2 mb-0 py-3 bg-info">TODOCEL</h1>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg bg-primary py-3">
+        <div class="container">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <div class="separator"></div>
+                <li class="nav-item">
+                    <a class="nav-link" href="products.html">Products</a>
+                </li>
+                <div class="separator"></div>
+                <li class="nav-item">
+                    <a class="nav-link" href="company.html">Company</a>
+                </li>
+                <div class="separator"></div>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Blogs</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-5 position-relative p-5">
+                    <div class="rombo-contenedor d-flex justify-content-center">
+                        <div>
+                            <img src="assets/fondo.jpg" alt="rombo" class="rombo">
+                            <img src="assets/imagen cuadrado.jpg" alt="cuadrado" class="cuadrado">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 ">
+                    <h2>TODOCEL</h2>
+                    <h3>Aqui encontrararas lo que deseas en dispositivos moviles</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut blanditiis quis molestiae et quos expedita necessitatibus, perferendis distinctio ex tenetur consequuntur nesciunt tempore sapiente ipsa fugiat voluptatibus itaque dolorem soluta</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/marca samsung.jpg" class="d-block w-100" alt="SAMSUNG">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/marca tecno.jpg" class="d-block w-100" alt="TECNO">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/marca infinix.jpg" class="d-block w-100" alt="INFINIX">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/marca iphone.jpg" class="d-block w-100" alt="IPHONE">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="row g-0 text-center custom-row  bg-secondary mt-5">
+            <div class="col-6 col-md-3 pt-5">
+                <p>+250M facebook <br><br> +150M Instagram<br>
+            </div>
+            <div class="col-6 col-md-3 d-flex flex-column align-items-center pt-5 ">
+                <a target="_blank" class="link-net" href="https://www.facebook.com/tenceluimport/?locale=es_LA">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="mb-4 icon icon-tabler icons-tabler-outline icon-tabler-brand-facebook">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                    </svg>
+                </a>
+
+                <a target="_blank" class="link-net"  href="https://www.instagram.com/tenceluimport/?hl=es">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="mb-4 icon icon-tabler icons-tabler-outline icon-tabler-brand-instagram">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" />
+                        <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                        <path d="M16.5 7.5l0 .01" />
+                    </svg>
+                </a>
+            </div>
+            <div class="col-6 col-md-3  bg-secondary pt-5">
+                <form class="d-flex mt-5 ms-3" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-dark" type="submit">Search</button>
+                </form>
+            </div>
+            <div class="col-6 col-md-3 bg-secondary pt-5">
+                <p class="ms-5 me-5">©2024 Copyright TODOCEL</p>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.bundle.js"></script>
+    <script>
+        $(document).ready(function() {
+    // Intervalo en milisegundos (por ejemplo, 3000 ms = 3 segundos)
+    var interval = 3000;
+
+    // Función para mover el carrusel automáticamente
+    setInterval(function() {
+        $('#carouselExample').carousel('next'); // Mueve al siguiente elemento
+    }, interval);
+});
+
+$(document).ready(function() {
+    // Establecer el tamaño de crecimiento
+    var originalSize = '1em'; // Tamaño original
+    var enlargedSize = '1.5em'; // Tamaño aumentado
+
+    // Aplicar efectos de hover a h1 y h2
+    $('h1, h2').hover(
+        function() {
+            $(this).css('font-size', enlargedSize); // Aumentar tamaño al pasar el mouse
+        }, 
+        function() {
+            $(this).css('font-size', originalSize); // Volver al tamaño original al quitar el mouse
+        }
+    );
+});
+            $('.cuadrado').hover(
+            function () {
+            $(this).css('transform', 'rotate(90deg)');
+            },
+            function () {
+          $(this).css('transform', 'rotate(180deg)');
+            });
+            $('.rombo').hover(
+            function () {
+            $(this).css('transform', 'rotate(180deg)');
+            },
+            function () {
+          $(this).css('transform', 'rotate(90deg)');
+            });
+    </script>
+</body>
+</html>

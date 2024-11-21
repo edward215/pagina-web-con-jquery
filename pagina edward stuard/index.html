@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="assets/Bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/Bootstrap/css/bootstrap.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous">
+
+    </script>
+    <script src="assets/js/jquery-3.7.1.js"></script>
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+    <header class="bg-info">
+        <div class="contain-titulo">
+            <button class = "btn btn-primary button_formulario" id ="buttonLogin " data-bs-toggle="modal" data-bs-target="#loginUser">Login</button>
+            <button class="btn btn-primary mb-4 button_formulario" id="buttonLogout">EXIT</button>
+            <div class="modal fade modal-producto container-fluid flex-row" id="loginUser">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content contenedor_modal row mx-0 loginbg">
+                        <div class="modal-header border-0">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 m-auto mb-5">
+                                <h2>Login</h2>
+                                <form id="formLogin">
+                                    <div class="mb-3">
+                                        <label for="emailUserLogin" class="form-label">correo</label>
+                                        <input type="text" class="form-control" id="emailUserLogin" name="email" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="passwordUserLogin" class="form-label">contraseña</label>
+                                        <input type="text" class="form-control" id="passwordUserLogin" name="nombre" required>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Aceptar</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>   
+            </div>          
+        <h1 class="text-center mt-2 mb-0 py-3 bg-info">TODOCEL</h1>
+        </div>
+    </header>
+    <nav class="navbar navbar-expand-lg bg-primary py-3">
+        <div class="container">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <div class="separator"></div>
+                <li class="nav-item">
+                    <a class="nav-link" href="products.html">Products</a>
+                </li>
+                <div class="separator"></div>
+                <li class="nav-item">
+                    <a class="nav-link" href="company.html">Company</a>
+                </li>
+                <div class="separator"></div>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Blogs</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section>
+        <div class="container">
+            <p class="text-center mt-5">
+                Tenemos la posibilidad de ofrecer una amplia variedad<br> de dispositivos moviles de alta gama y<br> buen rendimiento para diversos usos, ya sean usados para jugar,<br> tomar fotos, realizar ediciones a buenos precios aqui en <spam>TODOCEL</spam>.</p>
+        </div>
+
+        <div class="container px-4 text-center">
+            <div class="row gx-5">
+                <div class="col">
+                    <div class="p-3 mt-5">
+                        <h2>NUESTRO PRODUCTO MAS RECIENTE</h2>
+                        <p class="text-start mt-4">Como novedad el telefono mas reciente que nos ha llegado de la serie samsung es el 
+                    <spam>samsung galaxy s24 ultra</spam> el cual cuenta con caracteristicas muy favorables como su espacio de almacenamiento de hasta 1tb, 12gb de memoria ram y su procesador Snapdragon 8 Gen 3 y su calidad de camara que lo hacen un telefono muy deseado por los amantes de la serie samsung y lo puedes encontrar con nosotros.
+                        </p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="p-3 mt-5">
+                        <h2>MODELO S24 ULTRA</h2>
+                        <img class="img mt-4" src="assets/s24 ultra.jpg" alt="S24 ULTRA">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container border border-dark mt-5 ROSTER text-bg-secondary p-3">
+            <div class="container px-4 text-center">
+                <div class="row gx-5">
+                    <div class="col">
+                        <div class="p-3">
+                            <a target="_blank"  class="btn-roster-smackdown" id="s23-link" href="https://www.samsung.com/latin/smartphones/galaxy-s23-ultra/">
+                                <img class="img-raw-smackdown" src="assets/s23.jpg" id="s23-img" alt="Samsung s23">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="p-3">
+                            <a target="_blank" class="btn-roster-raw" id="s22-link" href="https://www.samsung.com/latin/smartphones/galaxy-s/galaxy-s22-phantom-black-128gb-sm-s901ezkjgto/buy/">
+                                <img class="img-raw-smackdown" src="assets/s22.jpg" id="s22-img" alt="Samsung s22">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container px-4 text-center">                
+            <div class="row gx-5">
+                <div class="col-12 col-lg-6 mb-4 mb-lg-0">
+                    <div class="p-3 cede">
+                        <h3 class="mt-5">Si sabes de calidad y buenos precios con nosotros puedes acudir</h3>
+                        <p class="text-start mt-4">
+                            Todocel les garantizara buenos precios a la hora de buscar adquirir un dispositivos los cuales tengamos disponibles y con los mejores precios para que no dude en acudir con nosotros, si esta interesado en nuestros dispositivos disponibles no dude en comunicarse con nostros con el siguiente formulario en el que debera registrarse.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6">
+                    <div class="p-3 sign-up formulario">
+                        <h3 class="mt-5">SIGN-UP</h3>
+                        <form class="form-inline" id="formRegister">
+                            <div class="row mb-4 mt-5">
+                                <label for="nameUser" class="col-sm-2 col-form-label">Nombre:</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="nameUser" placeholder="Ingresa tu nombre" required>
+                                </div>
+                            </div>
+                            <div class="row mb-4">
+                                <label for="emailUser" class="col-sm-2 col-form-label">Email:</label>
+                                <div class="col-sm-10">
+                                    <input type="email" class="form-control" id="emailUser" placeholder="Ingresa tu email" required>
+                                </div>
+                            </div>
+                            <div class="row mb-4">
+                                <label for="phoneUser" class="col-sm-2 col-form-label">Telefono:</label>
+                                <div class="col-sm-10">
+                                    <input type="tel" class="form-control" id="phoneUser" placeholder="Ingresa tu telefono" required>
+                                </div>
+                            </div>
+                            <div class="row mb-4">
+                                <label for="passwordUser" class="col-sm-2 col-form-label">Contraseña:</label>
+                                <div class="col-sm-10">
+                                    <input type="password" class="form-control" id="passwordUser" placeholder = "Ingrese una contraseña" required/>
+                                </div>
+                            </div>
+                            <div class="row mb-4 justify-content-center">
+                                <div class="col-sm-10">
+                                    <button type="submit" class="btn btn-primary">Enviar</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container px-4 text-center"> 
+            <div class="row gx-5 my-5">
+                <div class="col mt-5">
+                    <div class="p-3">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15707.299784877632!2d-71.3182343!3d10.1948672!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e89d119afbb9529%3A0xd7ca0ee31034a77!2sTENCELU%20IMPORT!5e0!3m2!1ses!2sve!4v1727307365246!5m2!1ses!2sve" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+
+                <div class="col">                   
+                    <div class="p-3 cede">
+                        <h3>Tienda disponible</h3>
+                        <p class="text-start mt-4">
+                            Nos Podra encontrar en la AV BOLIVAR CC OLIVA TORRE C NIVEL 01 LOCAL C-8 SECTOR, Cd Ojeda 4019, Zulia si acudes a dicha sede contaras con la mejor atencion al cliente que podrias recibir en cualquier otro lugar y te ayudaremos a que salgas del lugar con tu celular ideal.<br><a target="_blank" href="https://maps.google.com/maps?sca_esv=318a4f40679da281&sca_upv=1&output=search&q=tencelu&source=lnms&fbs=AEQNm0CbCVgAZ5mWEJDg6aoPVcBgWizR0-0aFOH11Sb5tlNhdzTfxpAVBoexMFZnKJBpl_OnTFfcge8advfRBIXE7C_RHAhoPBa2edkqZg8Jdrz8U3d4guIB2jKVIxKyuBn9PZqf4PS4-nFYCpF_sm4rE-jqV8ODyxlf0CPwAmqKlKC2sZqnbZNV1x3bXtJRosWhcmKBgIin&entry=mc&ved=1t:200715&ictx=111">para mas informacion sobre nuestra en este enlace la encontraras</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="row g-0 text-center custom-row  bg-secondary mt-5">
+            <div class="col-6 col-md-3 pt-5">
+                <p>+250M Facebook <br><br>+150M Instagram <br>
+            </div>
+            <div class="col-6 col-md-3 d-flex flex-column align-items-center pt-5 ">
+                <a target="_blank" class="link-net" href="https://www.facebook.com/tenceluimport/?locale=es_LA">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="mb-4 icon icon-tabler icons-tabler-outline icon-tabler-brand-facebook">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                    </svg>
+                </a>
+
+                <a target="_blank" class="link-net"  href="https://www.instagram.com/tenceluimport/?hl=es">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="mb-4 icon icon-tabler icons-tabler-outline icon-tabler-brand-instagram">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" />
+                    <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                    <path d="M16.5 7.5l0 .01" />
+                </svg>
+                </a>
+
+            </div>
+            <div class="col-6 col-md-3  bg-secondary pt-5">
+                <form class="d-flex mt-5 ms-3" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-dark" type="submit">Search:</button>
+                </form>
+            </div>
+            <div class="col-6 col-md-3 bg-secondary pt-5">
+                <p class="ms-5 me-5">©2024 Copyright TODOCEL</p>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.bundle.js"></script>
+    
+    <script>
+    function verifyLogin() {
+  const statusLogin = localStorage.getItem("login") === "true";
+  
+  if (statusLogin) {
+    $("#registroForm").hide();
+    $("#buttonLogin").hide();
+    $("#buttonLogout").show();
+  } else {
+    $("#registroForm").show();
+    $("#buttonLogin").show();
+    $("#buttonLogout").hide();
+  }
+}
+
+function logoutUser() {
+  localStorage.setItem("login", "false");
+  setTimeout(() => verifyLogin());
+}
+
+function loginUser(email, password) {
+  $.ajax({
+    url: "server/login.php",
+    type: "POST",
+    data: { email: email, password: password },
+    success: function(result) {
+      if (result.success) {
+        localStorage.setItem("login", "true");
+        $("#formLogin")[0].reset();
+        alert("Inicio exitoso de sesión");
+        setTimeout(() => verifyLogin());
+      } else {
+        logoutUser();
+        alert("Error al querer iniciar sesión");
+      }
+    },
+    error: function(error) {
+      console.error("Error:", error);
+      alert("Ocurrió un error al logearte");
+      logoutUser();
+    }
+  });
+}
+
+function registerUser(name, email, phone, password) {
+  $.ajax({
+    url: "server/register.php",
+    type: "POST",
+    data: { name: name, email: email, phone: phone, password: password },
+    success: function(result) {
+      if (result.success) {
+        $("#formRegister")[0].reset();
+        alert("Usuario registrado exitosamente");
+      } else {
+        alert("Error al registrarse");
+      }
+    },
+    error: function(error) {
+      console.error("Error:", error);
+      alert("Ocurrió un error al registrarse");
+    }
+  });
+}
+
+const init = () => {
+  const formRegister = $("#formRegister");
+  if (formRegister.length) {
+    formRegister.on("submit", async (event) => {
+      event.preventDefault();
+
+      const name = $("#nameUser").val();
+      const email = $("#emailUser").val();
+      const phone = $("#phoneUser").val();
+      const password = $("#passwordUser").val();
+
+      registerUser(name, email, phone, password);
+    });
+  }
+
+  const formLogin = $("#formLogin");
+  if (formLogin.length) {
+    formLogin.on("submit", async (event) => {
+      event.preventDefault();
+
+      const email = $("#emailUserLogin").val();
+      const password = $("#passwordUserLogin").val();
+
+      loginUser(email, password);
+    });
+  }
+
+  const buttonLogout = $("#buttonLogout");
+  if (buttonLogout.length) {
+    buttonLogout.on("click", async () => {
+      logoutUser();
+    });
+  }
+
+  verifyLogin();
+};
+
+$(document).ready(init);
+
+
+$('.btn-primary').on('click', function() {
+    $(this).animate({ deg: 360 }, {
+        duration: 1000,
+        step: function(now) {
+            $(this).css({ transform: 'rotate(' + now + 'deg)' });
+        }
+    });
+});
+
+
+$('.img').hover(
+  function() {
+      $(this).animate({ width: '110%', height: '110%' }, 300);
+  },
+  function() {
+      $(this).animate({ width: '100%', height: '100%' }, 300);
+  }
+);
+
+
+
+$('h2').hover(
+  function() {
+      $(this).css('color', '#ff0000'); 
+  },
+  function() {
+      $(this).css('color', '#000000');
+  }
+);
+    </script>
+    <script>
+        const imgS23 = document.getElementById('s23-img');
+        const imgS22 = document.getElementById('s22-img');
+    
+        imgS23.addEventListener('mouseover', () => {
+            imgS23.style.transform = 'translateX(-100%)';
+            imgS22.style.transform = 'translateX(100%)';
+        });
+    
+        imgS23.addEventListener('mouseout', () => {
+            imgS23.style.transform = 'translateX(0)';
+            imgS22.style.transform = 'translateX(0)';
+        });
+    
+        imgS22.addEventListener('mouseover', () => {
+            imgS22.style.transform = 'translateX(-100%)';
+            imgS23.style.transform = 'translateX(100%)';
+        });
+    
+        imgS22.addEventListener('mouseout', () => {
+            imgS22.style.transform = 'translateX(0)';
+            imgS23.style.transform = 'translateX(0)';
+        });
+        $(document).ready(function() {
+    $('h2, .img').hide().fadeIn(1000); // Aparecen en 1000 milisegundos
+});
+    
+$(document).ready(function() {
+    // Cambiar el color del label al pasar el mouse
+    $('label').on('mouseenter', function() {
+        $(this).css('color', '#f39c12'); // Cambia a un color específico al pasar el mouse
+    }).on('mouseleave', function() {
+        $(this).css('color', ''); // Restaura el color original al salir
+    });
+});
+
+
+    </script>
+</body>
+</html>

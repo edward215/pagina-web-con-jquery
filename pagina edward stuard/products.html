@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="assets/Bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/Bootstrap/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous">
+
+    </script>
+    <script src="assets/js/jquery-3.7.1.js"></script>
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+    <header class="bg-info">
+        <div class="contain-titulo">
+            <button class = "btn btn-primary button_formulario" id ="buttonLogin " data-bs-toggle="modal" data-bs-target="#loginUser">Login</button>
+            <button class="btn btn-primary mb-4 button_formulario" id="buttonLogout">EXIT</button>
+            <div class="modal fade modal-producto container-fluid flex-row" id="loginUser">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content contenedor_modal row mx-0 loginbg">
+                        <div class="modal-header border-0">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 m-auto mb-5">
+                                <h2>Login</h2>
+                                <form id="formLogin">
+                                    <div class="mb-3">
+                                        <label for="emailUserLogin" class="form-label">correo</label>
+                                        <input type="text" class="form-control" id="emailUserLogin" name="email" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="passwordUserLogin" class="form-label">contraseña</label>
+                                        <input type="text" class="form-control" id="passwordUserLogin" name="nombre" required>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Aceptar</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>   
+            </div>          
+        <h1 class="text-center mt-2 mb-0 py-3 bg-info">TODOCEL</h1>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg bg-secondary py-3"> <!--BARRA NAVEGADORA-->
+        <div class="container">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a> <!--ENLACES-->
+                </li>
+                <div class="separator"></div>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Products</a>
+                </li>
+                <div class="separator"></div>
+                <li class="nav-item">
+                    <a class="nav-link" href="company.html">Company</a>
+                </li>
+                <div class="separator"></div>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Blogs</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section>
+        <div class="container">
+            <p class="text-center mt-5">
+                Encuentra tu celular perfecto con nuestras recomendaciones y precios para que disfrutes de un
+                dispositivo movil excelente y sin arrepentimientos de tomar la decision de comprarlo con nosotros
+                ya que le ofrecemos una buena variedad entre diversas marcas como samsung, tecno, infinix e incluso iphones.
+            </p>
+        </div>
+
+        <nav class="navbar bg-body-tertiary">
+            <div class="container-fluid bg-info">
+              <a class="navbar-brand">Busca la marca de tu celular preferida:</a>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+        </nav>
+
+        <div class="container my-5">
+            <div class="row text-center">
+                <div class="col-md-4 pb-3">
+                    <div class="card">
+                        <img src="assets/s22.jpg" class="card-img-top" alt="Imagen 1">
+                        <div class="card-body">
+                            <h5 class="card-title text-start">S22</h5>
+                            <p class="card-text">$240.00</p>
+                            <button class="btn btn-info"> Añadir al carrito </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 pb-3">
+                    <div class="card">
+                        <img src="assets/infinix note 40.jpg" class="card-img-top" alt="Imagen 2">
+                        <div class="card-body">
+                            <h5 class="card-title text-start">Infinix Note 40</h5>
+                            <p class="card-text">$200.00</p>
+                            <button class="btn btn-info">Añadir al carrito</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 pb-3">
+                    <div class="card">
+                        <img src="assets/tecno spark go 2024.jpg" class="card-img-top" alt="Imagen 3">
+                        <div class="card-body">
+                            <h5 class="card-title text-start">Tecno Spark Go 2024</h5>
+                            <p class="card-text">$75.00</p>
+                            <button class="btn btn-info">Añadir al carrito</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="productModal" tabindex="-1" role="dialog" aria-labelledby="productModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="productModalLabel"></h5>
+                            </div>
+                            <div class="modal-body">
+                                <img id="modalImage" src="" class="img-fluid" alt="">
+                                <p id="modalPrice"></p>
+                                <button type="button" id="closeModalBtn" class="btn btn-secondary">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div id="details-box" class="details-box d-flex  pe-3">
+                <img id="details-img" src="assets/s24 ultra2.jpg" alt="Imagen detallada" class="img-fluid mb-3">
+                <div class="container text-center contiene">
+                    <h5 id="details-title" >Modelo mas nuevo S24</h5>
+                    <p id="details-description">este telefono mas novedoso de samsung con altas capacicades de 
+                    almacenamiento superior a 256gb con 12gb de ram, tambien con su version ultra que cuenta con una cantidad de almacenamiento de hasta 1tb y los puedes comprar con nosotrosa buenos precios.
+                    </p>
+                    <p id="details-price">1200$</p>
+                    <button id="details-button" class="btn btn-info">Añadir al carrito</button>
+                </div>
+            </div>
+            <div id="successModal" class="modal" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Si quieres mas sigue buscando</h5>
+                    </div>
+                    <div class="modal-body">
+                      <p>Tu producto ha sido añadido al carrito.</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    </div>
+                   </div>
+                </div>
+            </div>
+        </div>
+        
+        
+    </section>
+<footer>
+    <div class="row g-0 text-center custom-row  bg-secondary mt-5">
+        <div class="col-6 col-md-3 pt-5">
+            <p>+250M facebook <br> <br> +150M Instagram <br>
+        </div>
+        <div class="col-6 col-md-3 d-flex flex-column align-items-center pt-5 ">
+            <a target="_blank" class="link-net" href="https://www.facebook.com/tenceluimport/?locale=es_LA">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="mb-4 icon icon-tabler icons-tabler-outline icon-tabler-brand-facebook">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                </svg>
+            </a>
+
+            <a target="_blank" class="link-net"  href="https://www.instagram.com/tenceluimport/?hl=es">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="mb-4 icon icon-tabler icons-tabler-outline icon-tabler-brand-instagram">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" />
+                <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                <path d="M16.5 7.5l0 .01"/>
+            </svg>
+            </a>
+
+        </div>
+        <div class="col-6 col-md-3  bg-secondary pt-5">
+            <form class="d-flex mt-5 ms-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-dark" type="submit">Search</button>
+            </form>
+        </div>
+        <div class="col-6 col-md-3 bg-secondary pt-5">
+            <p class="ms-5 me-5">©2024 TODOCEL</p>
+        </div>
+    </div>
+</footer>
+<script src="assets/js/main.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.bundle.js"></script>
+<script>
+    $(document).ready(function() {
+    $('.btn-info').click(function() {
+        // Obtener los datos del producto
+        var productName = $(this).closest('.card-body').find('.card-title').text();
+        var productPrice = $(this).closest('.card-body').find('.card-text').text();
+        var productImage = $(this).closest('.card').find('.card-img-top').attr('src');
+
+        $('#productModalLabel').text(productName);
+        $('#modalPrice').text(productPrice).hide().fadeIn(500); 
+        $('#modalImage').attr('src', productImage);
+
+
+        $('#productModal').modal('show');
+    });
+
+    $('#closeModalBtn').click(function() {
+        $('#productModal').modal('hide');
+    });
+});
+$(document).ready(function() {
+    $('#details-button').click(function() {
+        alert('¡Producto añadido al carrito!');
+    });
+});
+$(document).ready(function(){
+    $('#details-button').click(function(){
+        $('#successModal').modal('show');
+    });
+});
+    </script>
+</body>
+
+</html>
